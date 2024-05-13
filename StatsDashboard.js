@@ -14,6 +14,7 @@ import {
 } from '@chakra-ui/react';
 
 import React, { PureComponent, useEffect, useState } from 'react';
+import { useUser } from '@realm/react'
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { database } from "./utils/config.js";
 import { getDatabase, ref, onValue } from "firebase/database";
